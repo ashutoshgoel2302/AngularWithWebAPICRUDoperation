@@ -29,6 +29,8 @@ export class ListchildrenComponent implements OnInit {
   showForEdit(child: Child) {
     
     this.childservice.selectedChild = child;
+    console.log(this.childservice.selectedChild);
+    console.log("second");
     this.router.navigate(['Create']);
   }
 

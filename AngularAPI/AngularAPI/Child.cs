@@ -19,5 +19,7 @@ namespace AngularAPI
         public string LastName { get; set; }
         public string Gender { get; set; }
         public string Address { get; set; }
+        public Nullable<System.DateTime> BirthDate { get; set; }
+        public string ChildType { get; set; }
     }
 }

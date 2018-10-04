@@ -11,6 +11,20 @@ import { ListchildrenComponent } from './children/listchildren.component';
 import { CreatechildrenComponent } from './children/createchildren.component';
 import { UploadComponent } from './children/upload.component';
 import { FilterdataPipe } from './children/filterdata.pipe';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {MatButtonModule,
+   MatCheckboxModule,
+    MatSliderModule,
+     MatRadioModule,
+     MatDatepickerModule,
+     MatNativeDateModule,
+     MatFormFieldModule,
+     MatInputModule,
+     MatOptionModule,
+     MatSelectModule
+
+
+} from '@angular/material';
 
  const approutes :Routes = [
    {path:'Create', component: CreatechildrenComponent},
@@ -31,9 +45,30 @@ import { FilterdataPipe } from './children/filterdata.pipe';
     RouterModule.forRoot(approutes),
     FormsModule,
     ReactiveFormsModule,
-    // HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatButtonModule,
+     MatCheckboxModule,
+       MatRadioModule,
+        MatSliderModule,
+        MatDatepickerModule,
+        MatNativeDateModule,
+        MatFormFieldModule,
+        MatInputModule,
+        MatOptionModule,
+        MatSelectModule 
   ],
+  exports:[MatButtonModule,
+     MatCheckboxModule, 
+      MatRadioModule,
+       MatSliderModule,
+       MatDatepickerModule,
+       MatNativeDateModule,
+       MatFormFieldModule,
+       MatInputModule,
+       MatOptionModule,
+       MatSelectModule
+       ],
   providers: [ChildService],
   bootstrap: [AppComponent]
 })

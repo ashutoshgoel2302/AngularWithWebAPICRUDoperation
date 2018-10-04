@@ -11,6 +11,7 @@
   <tr *ngFor="let child of Data | filterdata: queryString : 'FirstName':'LastName' ; let i = index">
     <td>{{child.FirstName}} - {{child.LastName}}</td>
     <td>{{child.Gender}}</td>
+    <td>{{child.ChildType}}</td>
     <td>
       <a class="btn btn-sm-primary" (click)="showForEdit(child)">
         <!-- <i class="fa fa-pencil-square-o"></i> -->

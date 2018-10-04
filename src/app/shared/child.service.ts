@@ -11,7 +11,8 @@ export class ChildService {
   headers={
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
 }
-   selectedChild : Child;
+   selectedChild : Child ={ID:0,FirstName:"",LastName:"",Address:"", Gender:"",BirthDate:null, ChildType:""};
+   
    childList : Child[];
   constructor(private http : HttpClient) { }
 

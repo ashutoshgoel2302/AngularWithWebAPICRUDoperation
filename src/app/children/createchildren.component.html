@@ -25,15 +25,46 @@
       <!-- <div class="validation-error" *ngIf="LastName.invalid && LastName.touched">This Field is Required.</div> -->
     </div>
   </div>
-  <div class="form-group">
+  <div class="form-row">
       <div class="form-group col-md-6">
     <input class="form-control" name="Address" formControlName="Address" placeholder="Address">
   </div>
+  <div class="form-group col-md-6">
+    <mat-radio-group class="example-radio-group" name="Gender"  formControlName="Gender">
+      <mat-radio-button class="example-radio-button" *ngFor="let gender of GenderList" [value]="gender">
+        {{gender}}
+      </mat-radio-button>
+    </mat-radio-group>
   </div>
-  <div class="form-row">
+  </div>
+  <!-- <div class="form-row">
     <div class="form-group col-md-6">
       <input class="form-control" name="Gender" formControlName="Gender" placeholder="Gender">
     </div>
+   
+  </div> -->
+  <div class="form-row">
+   
+    <div class="form-group col-md-6">
+      <mat-form-field>
+        <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="BirthDate">
+        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field></div>
+  </div>
+  <div class="form-row">
+    
+<div class="form-group col-md-6">
+  <mat-form-field>
+    <mat-select placeholder="Child Type" formControlName="ChildType">
+      <mat-option *ngFor="let childType of ChildTypeList" [value]="childType">
+        {{childType}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+    
+   
    
   </div>
   <div class="form-row">

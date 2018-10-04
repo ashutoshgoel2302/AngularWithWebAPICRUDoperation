@@ -4,6 +4,8 @@
     <EntitySetMapping Name="Children">
       <EntityTypeMapping TypeName="AngularModel.Child">
         <MappingFragment StoreEntitySet="Child">
+          <ScalarProperty Name="ChildType" ColumnName="ChildType" />
+          <ScalarProperty Name="BirthDate" ColumnName="BirthDate" />
           <ScalarProperty Name="ID" ColumnName="ID" />
           <ScalarProperty Name="FirstName" ColumnName="FirstName" />
           <ScalarProperty Name="LastName" ColumnName="LastName" />

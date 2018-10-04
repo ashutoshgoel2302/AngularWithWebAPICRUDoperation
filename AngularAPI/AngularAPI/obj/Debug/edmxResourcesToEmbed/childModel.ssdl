@@ -9,6 +9,8 @@
     <Property Name="LastName" Type="varchar" MaxLength="50" />
     <Property Name="Gender" Type="varchar" MaxLength="50" />
     <Property Name="Address" Type="varchar" MaxLength="50" />
+    <Property Name="BirthDate" Type="date" />
+    <Property Name="ChildType" Type="varchar" MaxLength="50" />
   </EntityType>
   <EntityType Name="Files">
     <Key>

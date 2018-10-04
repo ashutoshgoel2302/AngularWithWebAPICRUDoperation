@@ -4,8 +4,8 @@ export class Child {
     FirstName        :string;
     Gender           :string;
     Address          :string;
-
-
+    BirthDate        :Date;
+    ChildType        :string;
     // ID                      :number;
     // Child_Last_Name         :string;
     // Child_First_Name        :string;
